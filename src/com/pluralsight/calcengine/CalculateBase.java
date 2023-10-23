@@ -7,6 +7,10 @@ public class CalculateBase {
     private double rightValue;
     private double result;
 
+    public CalculateBase(double leftValue, double rightValue) {
+        this.leftValue = leftValue;
+        this.rightValue = rightValue;
+    }
 
     public void calculate() {
     }
