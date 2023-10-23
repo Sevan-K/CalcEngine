@@ -3,11 +3,16 @@ package com.pluralsight.calcengine;
 
 public class Main {
     public static void main(String[] args) {
-        performCalculation();
+//        performCalculation();
+        Divider divider = new Divider();
+        doCalculation(divider, 100.0d, 50.0d);
+
+        Adder adder = new Adder();
+        doCalculation(adder, 25.0d, 92.0d);
     }
 
-    static void doCalculation(CalculateBase calculation, double leftvalue, double rightValue) {
-        calculation.setLeftValue(leftvalue);
+    static void doCalculation(CalculateBase calculation, double leftValue, double rightValue) {
+        calculation.setLeftValue(leftValue);
         calculation.setRightValue(rightValue);
         calculation.calculate();
 
